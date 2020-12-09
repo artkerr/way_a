@@ -1,0 +1,26 @@
+.phone {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+
+
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+.phone__link {
+  font-size: 18px;
+  line-height: 32px;
+  color: $dark;
+  text-decoration: underline;
+
+  &:hover {
+    color: $orange-two;
+  }
+}
+
+.phone__icon {
+  stroke: $dark;
+}

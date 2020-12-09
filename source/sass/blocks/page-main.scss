@@ -1,0 +1,37 @@
+.page-main__promo {
+  margin-bottom: 80px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 124px;
+  }
+}
+
+.page-main__places {
+  margin-bottom: 82px;
+
+  @media (max-width: $mobile-width-only) {
+   margin-bottom: 85px;
+  }
+}
+
+.page-main__price {
+  margin-bottom: 123px;
+  margin-top: -450px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+   margin-bottom: 63px;
+  }
+}
+
+.page-main__feedback {
+  margin-bottom: 57px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 30px;
+   }
+}
+

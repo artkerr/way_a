@@ -1,0 +1,35 @@
+.promo {
+  background: url("../img/promo-bg.jpg") no-repeat scroll top center;
+  background-size: 155%;
+  min-height: 860px;
+
+  @media (max-width: $tablet-width-only) {
+    min-height: 344px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 235px;
+  }
+}
+
+.promo__wrapper {
+  padding-top: 185px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (max-width: $tablet-width-only)  {
+    display: block;
+    padding-top: 60px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 82px;
+  }
+}
+
+.promo__offer {
+  grid-column: 4/6;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 auto;
+  }
+}

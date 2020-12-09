@@ -1,0 +1,131 @@
+.card-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0 81px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 25px;
+  }
+}
+
+.card-list__item {
+  flex-basis: 350px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 95px;
+
+  &:hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 350px;
+    height: 430px;
+    background-color: $dark-blue-60;
+    z-index: 10;
+  }
+
+  &:hover .card-list__link {
+    display: block;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    flex-basis: 288px;
+    margin-right: 29px;
+    margin-bottom: 12px;
+
+    &:hover::after {
+      width: 288px;
+      height: 425px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 25px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 0;
+    flex-shrink: 0;
+    margin-bottom: 28px;
+
+    &:nth-child(3) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card-list__span {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.41px;
+  color: $dark-blue;
+  text-align: center;
+  width: 215px;
+  height: 61px;
+  background-color: $white;
+  position: absolute;
+  bottom: 5px;
+  left: 68px;
+  padding-top: 15px;
+
+  @media (max-width: $tablet-width-only) {
+    left: 35px;
+    bottom: 6px;
+  }
+}
+
+.card-list__link {
+  display: none;
+  text-transform: uppercase;
+  color: $white;
+  border: 2px solid $white;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 266px;
+  height: 77px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.card-list__img {
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 288px;
+    height: 425px;
+  }
+}

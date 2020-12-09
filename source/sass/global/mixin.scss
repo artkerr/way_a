@@ -1,0 +1,60 @@
+
+@mixin subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $dark;
+
+
+  @media (max-width: $tablet-width-only) {
+    font-weight: 500;
+    line-height: 34px;
+  }
+}
+
+@mixin input {
+  font-size: 14px;
+  width: 269px;
+  height: 50px;
+  border: 1px solid $gray-30;
+  padding-left: 15px;
+
+  &:invalid {
+    border-color: $orange;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
+}
+
+@mixin modal-close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: $dark-blue-20;
+    left: 0;
+    top: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

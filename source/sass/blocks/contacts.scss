@@ -1,0 +1,28 @@
+.contacts {
+  max-width: 390px;
+}
+
+.contacts__title {
+  @include subtitle;
+  margin-left: 81px;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.contacts__list {
+  margin-left: 81px;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0;
+    padding-left: 30px;
+  }
+}
+

@@ -1,0 +1,116 @@
+
+.country {
+  background: url("../img/country-bg.jpg") no-repeat center center;
+  background-position: center 70px;
+  padding-bottom: 600px;
+
+  @media (max-width: $tablet-width-only) {
+    background: none;
+    padding: 0;
+  }
+}
+
+.country__item {
+  display: none;
+  position: relative;
+
+  &--active {
+    display: flex;
+
+    @media (max-width: $tablet-width-only) {
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+.country__title {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -1.25px;
+  position: relative;
+  margin-bottom: 47px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $orange;
+    width: 175px;
+    height: 3px;
+    left: 0;
+    bottom: -17px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.country__description-wrapper {
+  max-width: 370px;
+  margin-right: 98px;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 48px;
+  }
+}
+
+.country__description {
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 20px;
+    max-width: 726px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 288px;
+  }
+
+}
+
+.country__img {
+  margin-top: 45px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 0;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.country__btn {
+  padding: 30px 40px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 19px 53px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 19px 72px;
+  }
+}

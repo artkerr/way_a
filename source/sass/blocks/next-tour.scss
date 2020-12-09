@@ -1,0 +1,19 @@
+.next-tour {
+  width: 398px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.next-tour__title {
+  @include subtitle;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-left: 18px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

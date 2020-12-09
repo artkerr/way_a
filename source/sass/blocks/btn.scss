@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 14px;
+  background-color: $orange;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $orange-two;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}

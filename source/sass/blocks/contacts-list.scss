@@ -1,0 +1,37 @@
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+.contacts-list__item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list__link {
+  color: $orange;
+  text-decoration: underline;
+
+  &--email {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--phone{
+    line-height: 32px;
+  }
+
+  &:hover {
+    color: $orange-two;
+  }
+}
+
+.contacts-list__icon {
+  margin-right: 10px;
+
+  &--phone {
+    stroke: $gray-two;
+  }
+}
+
+

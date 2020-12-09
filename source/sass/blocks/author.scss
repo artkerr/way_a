@@ -1,0 +1,32 @@
+.author {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
+}
+
+.author__photo {
+  margin-right: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.author__name {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.5px;
+  letter-spacing: -0.47px;
+}
+
+.author__img {
+  margin-right: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,97 @@
+.tour-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 150px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 23px;
+    right: 8px;
+    width: 2px;
+    height: 189px;
+    background-color: $gray-two;
+  }
+
+  @media (max-width: $tablet-width-only) {
+   &::after {
+     right: 0;
+   }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 345px;
+    flex-direction: row;
+
+    &::after {
+      top: 390px;
+      width: 95%;
+      height: 1px;
+      left: 0;
+    }
+   }
+}
+
+.tour-list__item {
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-blue-50;
+  margin-bottom: 10px;
+
+  @media (max-width: $mobile-width-only) {
+   min-width: 150px;
+   max-height: 130px;
+   margin-bottom: 0;
+  }
+}
+
+.tour-list__first {
+  list-style: none;
+  padding: 0;
+  left: 0;
+
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+   }
+}
+
+.tour-list__first-item {
+  margin-bottom: 10px;
+}
+
+.tour-list__second {
+  list-style: none;
+  padding: 0;
+  left: 0;
+
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+   }
+}
+
+.tour-list__second-item {
+  margin-bottom: 10px;
+}
+
+.tour-list__third{
+  list-style: none;
+  padding: 0;
+  left: 0;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+   }
+}
+
+.tour-list__third-item {
+  margin-bottom: 10px;
+}

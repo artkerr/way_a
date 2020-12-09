@@ -1,0 +1,52 @@
+.corp-tour {
+  max-width: 320px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: -50px;
+    width: 2px;
+    height: 189px;
+    background-color: $gray-two;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 95%;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -15px;
+      width: 726px;
+      height: 1px;
+      background-color: $gray-two;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 95%;
+
+    &::before {
+      width: 95%;
+      left: 0;
+    }
+  }
+}
+
+.corp-tour__title {
+  @include subtitle;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 45px;
+  }
+}
+
+.corp-tour__text {
+  font-size: 14px;
+  line-height: 24px;
+}
