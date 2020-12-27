@@ -72,7 +72,8 @@ buyButton.push.apply(buyButton, countryButton)
 buyButton.push.apply(buyButton, rateButton)
 
 buyButton.forEach((btn) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
     modal.classList.add('modal--show');
     modal.querySelector('#phone-mod').focus();
   })

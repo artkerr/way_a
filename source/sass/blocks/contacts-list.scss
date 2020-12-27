@@ -4,13 +4,13 @@
 }
 .contacts-list__item {
   margin-bottom: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .contacts-list__link {
   color: $orange;
   text-decoration: underline;
+  display: flex;
+  align-items: center;
 
   &--email {
     font-size: 14px;

@@ -73,6 +73,8 @@
   letter-spacing: -1.27px;
   margin: 0;
   margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width-only)  {
     font-size: 24px;
@@ -81,7 +83,7 @@
   }
 }
 
-.rate__br {
+br {
   display: none;
 
   @media (max-width: $tablet-width-only)  {
@@ -94,7 +96,6 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 34px;
-  float: right;
   margin-top: 5px;
 
   @media (max-width: $tablet-width-only)  {
