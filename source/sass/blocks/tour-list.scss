@@ -18,9 +18,9 @@
   }
 
   @media (max-width: $tablet-width-only) {
-   &::after {
-     right: 0;
-   }
+    &::after {
+      right: 0;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -36,7 +36,7 @@
       height: 1px;
       left: 0;
     }
-   }
+  }
 }
 
 .tour-list__item {
@@ -46,9 +46,9 @@
   margin-bottom: 10px;
 
   @media (max-width: $mobile-width-only) {
-   min-width: 150px;
-   max-height: 130px;
-   margin-bottom: 0;
+    min-width: 150px;
+    max-height: 130px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,7 +60,7 @@
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
-   }
+  }
 }
 
 .tour-list__first-item {
@@ -75,21 +75,21 @@
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
-   }
+  }
 }
 
 .tour-list__second-item {
   margin-bottom: 10px;
 }
 
-.tour-list__third{
+.tour-list__third {
   list-style: none;
   padding: 0;
   left: 0;
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
-   }
+  }
 }
 
 .tour-list__third-item {

@@ -4,9 +4,9 @@
   padding: 25px 0 20px 0;
 
   @media (max-width: $tablet-width-only) {
-   padding: 18px 0 9px 20px;
+    padding: 18px 0 9px 20px;
 
-   &--closed .main-nav__toggle::before {
+    &--closed .main-nav__toggle::before {
       content: "";
       position: absolute;
       top: 35%;
@@ -16,9 +16,9 @@
       height: 1px;
       background-color: $white;
       box-shadow: 0 6px 0 0 $white, 0 12px 0 0 $white;
-   }
+    }
 
-   &--opened .main-nav__toggle {
+    &--opened .main-nav__toggle {
       position: absolute;
       background-color: $white;
       top: 0;
@@ -43,26 +43,27 @@
       &::after {
         transform: rotate(-45deg);
       }
-   }
-
-   &--nojs .main-nav__toggle {
-    display: none;
     }
 
-
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
     padding-left: 15px;
   }
-
 }
+
 
 .main-nav__logo {
   margin-right: auto;
 
-  @media (max-width: $tablet-width-only)  {
-    margin: 0;
+  @media (max-width: $tablet-width-only) {
+
+    display: flex;
+    align-self: center;
+    width: 100%;
   }
 }
 
@@ -74,21 +75,10 @@
   }
 }
 
-.main-nav__logo {
-
-  @media (max-width: $tablet-width-only) {
-
-    display: flex;
-    align-self: center;
-    width: 100%;
-  }
-}
-
 .main-nav__logo-link {
   @media (max-width: $tablet-width-only) {
     margin-right: auto;
-
-   }
+  }
 }
 
 .main-nav__toggle {
@@ -96,14 +86,14 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width-only) {
-   display: block;
-   width: 72px;
-   height: 50px;
-   background-color: $orange;
-   border: none;
-   position: absolute;
-   right: 0;
-   top: 0;
+    display: block;
+    width: 72px;
+    height: 50px;
+    background-color: $orange;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   @media (max-width: $mobile-width-only) {

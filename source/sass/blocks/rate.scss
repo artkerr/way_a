@@ -5,7 +5,7 @@
   min-height: 672px;
   flex-basis: 320px;
   padding: 30px;
-  box-shadow:  0px 0px 0px 1px $gray-30;
+  box-shadow: 0 0 0 1px $gray-30;
   border-radius: 6px;
   background-color: $white;
 
@@ -14,7 +14,7 @@
   }
 
   &:hover {
-    box-shadow:  0px 0px 0px 3px $orange;
+    box-shadow: 0 0 0 3px $orange;
   }
 
   &:hover .rate__title {
@@ -22,7 +22,7 @@
     line-height: 38px;
     letter-spacing: normal;
 
-    @media (max-width: $tablet-width-only)  {
+    @media (max-width: $tablet-width-only) {
       font-size: 24px;
       text-align: center;
     }
@@ -76,7 +76,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     font-size: 24px;
     text-align: center;
     margin-bottom: px;
@@ -86,7 +86,7 @@
 br {
   display: none;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     display: inline;
   }
 }
@@ -98,7 +98,7 @@ br {
   line-height: 34px;
   margin-top: 5px;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     text-align: center;
     float: none;
   }
@@ -152,7 +152,7 @@ br {
   min-width: 310px;
   padding: 30px 0;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     min-width: 288px;
     padding: 19px 0;
   }

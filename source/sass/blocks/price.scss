@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row-reverse;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     flex-direction: column;
   }
 }
@@ -11,7 +11,7 @@
   padding-left: 110px;
   padding-top: 85px;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     padding: 0;
     margin: 0 auto;
   }
@@ -70,10 +70,10 @@
 
 .price__description-phone {
   @media (max-width: $tablet-width-only) {
-   margin: 0 auto;
-   max-width: 220px;
-   text-align: center;
-   margin-bottom: 30px;
+    margin: 0 auto;
+    max-width: 220px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -89,11 +89,10 @@
   margin-bottom: 12px;
 
   @media (max-width: $tablet-width-only) {
-   margin: 0;
-   font-size: 18px;
-   margin-bottom: 10px;
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
-
 }
 
 .price__description-link {

@@ -6,6 +6,7 @@
   @media (max-width: $tablet-width-only) {
     min-height: 344px;
   }
+
   @media (max-width: $mobile-width-only) {
     min-height: 235px;
   }
@@ -16,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     display: block;
     padding-top: 60px;
   }
